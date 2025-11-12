@@ -1,0 +1,24 @@
+{
+   "TestData1": {
+      "Skill1": "Playwright by Testers Talk",
+      "Skill2": "Cypress by Testers Talk"
+   },
+   "TestData2": {
+      "Skill1": "JAvascript by Testers Talk",
+      "Skill2": "API testing  by Testers Talk"
+   },
+   "Credentials_QA": [
+      {
+         "username": "standard_user",
+         "password": "secret_sauce"
+      },
+      {
+         "username": "visual_user",
+         "password": "secret_sauce"
+      },
+      {
+         "username": "problem_user",
+         "password": "secret_sauce"
+      }
+   ]
+}

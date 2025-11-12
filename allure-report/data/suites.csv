@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2216","Logins for test users: visual_user","chromium","Wed Nov 12 10:33:51 SAST 2025","passed","Wed Nov 12 10:33:53 SAST 2025","Data Driven Tests Template For framework","ReadDataJSON\ReadJSONTada.spec.ts","",""
+"","2334","Logins for test users: problem_user","chromium","Wed Nov 12 10:33:51 SAST 2025","passed","Wed Nov 12 10:33:53 SAST 2025","Data Driven Tests Template For framework","ReadDataJSON\ReadJSONTada.spec.ts","",""
+"","2544","Logins for test users: standard_user","chromium","Wed Nov 12 10:33:51 SAST 2025","passed","Wed Nov 12 10:33:53 SAST 2025","Data Driven Tests Template For framework","ReadDataJSON\ReadJSONTada.spec.ts","",""
