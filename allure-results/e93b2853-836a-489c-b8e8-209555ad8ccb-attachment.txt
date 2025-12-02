@@ -1,0 +1,9 @@
+Authentication token: 6737d56294f9c3f
+THe Get By ID response body {
+  firstname: 'Wilco',
+  lastname: 'Louw',
+  totalprice: 150,
+  depositpaid: true,
+  bookingdates: { checkin: '2025-12-15', checkout: '2026-01-05' },
+  additionalneeds: 'Loose Heads In The Scrum'
+}
