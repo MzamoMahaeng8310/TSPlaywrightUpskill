@@ -26,14 +26,26 @@ exports.default = (0, test_1.defineConfig)({
     /* Opt out of parallel tests on CI. */
     workers: process.env.CI ? 1 : undefined,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-    reporter: 'html',
+    reporter: [
+        ['html'],
+        ["list"],
+        ["allure-playwright"],
+    ],
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
         /* Base URL to use in actions like `await page.goto('/')`. */
         // baseURL: 'http://localhost:3000',
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+        browserName: 'chromium',
+        screenshot: 'on',
         trace: 'on-first-retry',
-        headless: false
+        video: 'on',
+        headless: false,
+        launchOptions: {
+            args: [
+                '--disable-features=PasswordManagerOnboarding,PasswordManagerInternalsUI,AutofillServerCommunication,AutofillEnableAccountWalletStorage'
+            ]
+        }
     },
     /* Configure projects for major browsers */
     projects: [
@@ -41,14 +53,14 @@ exports.default = (0, test_1.defineConfig)({
             name: 'chromium',
             use: { ...test_1.devices['Desktop Chrome'] },
         },
-        {
-            name: 'firefox',
-            use: { ...test_1.devices['Desktop Firefox'] },
-        },
-        {
-            name: 'webkit',
-            use: { ...test_1.devices['Desktop Safari'] },
-        },
+        // {
+        //   name: 'firefox',
+        //   use: { ...devices['Desktop Firefox'] },
+        // },
+        // {
+        //   name: 'webkit',
+        //   use: { ...devices['Desktop Safari'] },
+        // },
         /* Test against mobile viewports. */
         // {
         //   name: 'Mobile Chrome',

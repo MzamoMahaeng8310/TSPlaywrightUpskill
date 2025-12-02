@@ -1,0 +1,13 @@
+Authentication token: 71aa3fece5552bf
+This is the booking id 1186
+The booking body {
+  bookingid: 1186,
+  booking: {
+    firstname: 'Wilco',
+    lastname: 'Louw',
+    totalprice: 150,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-15', checkout: '2026-01-05' },
+    additionalneeds: 'Loose Heads In The Scrum'
+  }
+}

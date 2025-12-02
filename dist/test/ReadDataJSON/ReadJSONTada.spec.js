@@ -1,29 +1,18 @@
 "use strict";
-//import { test, expect } from '@playwright/test';
-//import testData from '../../test-data/qa/testdata.json'
-//console.log(testData.Credentials_QA)
-//type TestData = {
-//  TestData1: {
-//     Skill1: string,
-//    Skill2: string
-//},
-//TestData2: {
-//  Skill1: string,
-// Skill2: string
-//},
-//Credentials_QA: {
-//  username: string,
-//password: string
-//}
-//}
-//const typeTestData = testData as TestData
-//for (const dataSetName in typeTestData) {
-// const skills = typeTestData[dataSetName as keyof TestData];
-//https://youtu.be/YfRazDhi9Fw?t=1250
-//}
-//test('Data Driven Test - Read Data From JSON', async ({ page }) => {
-//   await page.goto(`${process.env.practice_qa}`)
-//   await page.locator('(//a[normalize-space()="Practice"])[1]').click()
-///   await expect(page).toHaveURL('https://practicetestautomation.com/practice/')
-//s   await expect(page.locator('//em[contains(text(),"Page to reproduce the most common Selenium Excepti")]')).toHaveText('Page to reproduce the most common Selenium Exceptions.')
-//}); 
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const test_1 = require("@playwright/test");
+const testdata_json_1 = __importDefault(require("../../test-data/qa/testdata.json"));
+test_1.test.describe("Data Driven Tests Template For framework", () => {
+    for (const credentials of testdata_json_1.default.Credentials_QA) {
+        (0, test_1.test)(` Logins for test users: ${credentials.username}`, async ({ page }) => {
+            await page.goto(`${process.env.data_drive_link}`);
+            await page.fill("#user-name", credentials.username);
+            await page.fill("#password", credentials.password);
+            await page.locator("#login-button").click();
+            await (0, test_1.expect)(page).toHaveURL(/inventory/);
+        });
+    }
+});

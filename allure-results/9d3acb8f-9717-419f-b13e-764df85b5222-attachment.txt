@@ -1,0 +1,12 @@
+Authentication token: e115e67a3132c94
+The booking body {
+  bookingid: 2726,
+  booking: {
+    firstname: 'Wilco',
+    lastname: 'Louw',
+    totalprice: 150,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-15', checkout: '0NaN-aN-aN' },
+    additionalneeds: 'Loose Heads In The Scrum'
+  }
+}

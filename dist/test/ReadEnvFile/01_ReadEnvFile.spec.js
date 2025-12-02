@@ -7,3 +7,9 @@ const test_1 = require("@playwright/test");
     await (0, test_1.expect)(page).toHaveURL('https://practicetestautomation.com/practice/');
     await (0, test_1.expect)(page.locator('//em[contains(text(),"Page to reproduce the most common Selenium Excepti")]')).toHaveText('Page to reproduce the most common Selenium Exceptions.');
 });
+(0, test_1.test)('test', async ({ page }) => {
+    await page.goto('https://www.saucedemo.com/');
+    await page.locator('[data-test="username"]').fill('standarkd_user');
+    await page.locator('[data-test="password"]').fill('secret_source');
+    await page.locator('[data-test="login-button"]').click();
+});

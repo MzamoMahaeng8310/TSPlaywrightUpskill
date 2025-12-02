@@ -39,7 +39,7 @@ export default defineConfig({
     screenshot: 'on',
     trace: 'on-first-retry',
     video: 'on',
-    headless: true,
+    headless: false,
     launchOptions: {
       args: [
         '--disable-features=PasswordManagerOnboarding,PasswordManagerInternalsUI,AutofillServerCommunication,AutofillEnableAccountWalletStorage'

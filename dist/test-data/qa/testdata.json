@@ -7,8 +7,34 @@
         "Skill1": "JAvascript by Testers Talk",
         "Skill2": "API testing  by Testers Talk"
     },
-    "Credentials_QA": {
-        "username": "student",
-        "password": "Password123"
+    "Credentials_QA": [
+        {
+            "username": "standard_user",
+            "password": "secret_sauce"
+        },
+        {
+            "username": "visual_user",
+            "password": "secret_sauce"
+        },
+        {
+            "username": "problem_user",
+            "password": "secret_sauce"
+        }
+    ],
+    "endPoint": {
+        "baseURL": "https://restful-booker.herokuapp.com",
+        "username": "admin",
+        "password": "password123"
+    },
+    "BookindData": {
+        "firstname": "Wilco",
+        "lastname": "Louw",
+        "totalprice": 150,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-12-15",
+            "checkout": "2016-01-0"
+        },
+        "additionalneeds": "Loose Heads In The Scrum"
     }
 }
