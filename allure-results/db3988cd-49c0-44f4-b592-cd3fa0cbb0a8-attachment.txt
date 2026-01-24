@@ -1,0 +1,13 @@
+Authentication token: c6c9becff7266f5
+This is the booking id 3262
+The booking body {
+  bookingid: 3262,
+  booking: {
+    firstname: 'Wilco',
+    lastname: 'Louw',
+    totalprice: 150,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-15', checkout: '2026-01-05' },
+    additionalneeds: 'Loose Heads In The Scrum'
+  }
+}

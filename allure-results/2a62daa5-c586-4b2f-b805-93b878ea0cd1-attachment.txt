@@ -1,0 +1,9 @@
+Authentication token: 67b3581ae59a4c8
+The updated resposebody is {
+  firstname: 'Jakes',
+  lastname: 'White',
+  totalprice: 875,
+  depositpaid: true,
+  bookingdates: { checkin: '2025-12-25', checkout: '2026-01-31' },
+  additionalneeds: '2007 world cup  winning coach'
+}

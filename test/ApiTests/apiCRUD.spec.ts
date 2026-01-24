@@ -1,51 +1,58 @@
-import {test , expect} from '../../Helpers/fixtures/appFixtures'
+import { test, expect } from '../../Helpers/fixtures/appFixtures'
+import { CreateBookingRequest, CreateBookingResponse, UpdateBookingRequest, GetBookingByIdResponse } from '../../Helpers/api/bookingModels'
 import testData from '../../test-data/qa/testdata.json'
 test.describe.serial('API CRUD Base Suite', () => {
    let bookingID: number
-     test.beforeEach(async ({api}) => {
-        await api.authenticate(testData.endPoint.username,testData.endPoint.password)
-     })
-   
-   test('Create a booking' , async ({api}) => {
-    const response = await api.createBooking(testData.BookingData)
+   test.beforeEach(async ({ api }) => {
+      await api.authenticate(testData.endPoint.username, testData.endPoint.password)
+   })
 
-    expect(response.status()).toBe(200)
+   test('Create a booking', async ({ api }) => {
 
-    const body = await response.json()
-    bookingID = body.bookingid
-    console.log(`This is the booking id ${bookingID}`)
-    console.log("The booking body" , body)
+      const bookingRequest: CreateBookingRequest = testData.BookingData
+      const response = await api.createBooking(bookingRequest)
 
-    expect(body.booking.firstname).toBe(testData.BookingData.firstname)
-})
+      expect(response.status()).toBe(200)
 
- test('Get Booking by ID',async ({api}) =>{
-   const response  = await api.getBooking(bookingID)
-   expect(response.status()).toBe(200)
+      const body: CreateBookingResponse = await response.json()
+      bookingID = body.bookingid
+      console.log(`This is the booking id ${bookingID}`)
+      console.log("The booking body", body)
 
-   const body = await response.json()
-   console.log('THe Get By ID response body' , body)
-   expect(body.firstname).toBe(testData.BookingData.firstname)
-   expect(body.lastname).toBe(testData.BookingData.lastname)
-   expect(body.bookingdates.checkin).toBe(testData.BookingData.bookingdates.checkin)
- })
+      expect(body.booking.firstname).toBe(bookingRequest.firstname)
+      expect(body.booking.lastname).toBe(bookingRequest.lastname)
+   })
 
- test('Update Booking', async ({ api }) => {
-   const response = await api.updateBooking(bookingID,testData.UpdateBookingData)
 
-   expect(response.status()).toBe(200)
-   const body = await response.json()
-   console.log ("The updated resposebody is",body)
-   expect(body.firstname).toBe(testData.UpdateBookingData.firstname)
-   expect(body.lastname).toBe(testData.UpdateBookingData.lastname)
-   expect(body.bookingdates.checkin).toBe(testData.UpdateBookingData.bookingdates.checkin)
- 
-});
+   test('Get Booking by ID', async ({ api }) => {
+      const response = await api.getBooking(bookingID)
+      expect(response.status()).toBe(200)
 
-test('Delete The Booking', async ({ api }) => {
-   const reponse = await api.deleteBooking(bookingID)
-   expect(reponse.status()).toBe(201)
-});
+      const body: GetBookingByIdResponse = await response.json()
+      console.log('THe Get By ID response body', body)
+      expect(body.firstname).toBe(testData.BookingData.firstname)
+      expect(body.lastname).toBe(testData.BookingData.lastname)
+      expect(body.bookingdates.checkin).toBe(testData.BookingData.bookingdates.checkin)
+   })
+  
+   test('Update Booking', async ({ api }) => {
+
+      const updateBookingRequest: UpdateBookingRequest = testData.UpdateBookingData
+      const response = await api.updateBooking(bookingID, updateBookingRequest)
+
+      expect(response.status()).toBe(200)
+      const body :GetBookingByIdResponse = await response.json()
+      console.log("The updated resposebody is", body)
+      expect(body.firstname).toBe(testData.UpdateBookingData.firstname)
+      expect(body.lastname).toBe(testData.UpdateBookingData.lastname)
+      expect(body.bookingdates.checkin).toBe(testData.UpdateBookingData.bookingdates.checkin)
+
+   });
+
+   test('Delete The Booking', async ({ api }) => {
+      const reponse = await api.deleteBooking(bookingID)
+      expect(reponse.status()).toBe(201)
+   });
 
 })
 
