@@ -3,11 +3,13 @@ import { LoginPage } from '../../Pages/login.page'
 import { DashboardPage } from '../../Pages/dashboard.page'
 import { ApiClient } from '../api/apiClient'
 import testData from '../../test-data/qa/testdata.json'
+import { UiHelper } from '../uiHelpers/UiHelper';
 
 type AppFixtures = {
     loginPage: LoginPage
     dashboardPage: DashboardPage
     api: ApiClient
+    ui: UiHelper
 };
 
 export const test = base.extend<AppFixtures>({
@@ -23,14 +25,21 @@ export const test = base.extend<AppFixtures>({
     },
 
     api: async ({ request }, use) => {
-        const api = new ApiClient(request,testData.endPoint.baseURL)
+        const api = new ApiClient(request, testData.endPoint.baseURL)
         await use(api)
-    }
+    },
+
+    ui: async ({ page }, use) => {
+        const ui = new UiHelper(page)
+        await use(ui)
+    },
 });
 
-test.beforeEach(async ({ loginPage }) => {
-   await loginPage.goto()
-    await loginPage.login(testData.Credentials_QA[0].username, testData.Credentials_QA[0].password)
+test.beforeEach(async ({ ui, loginPage }) => {
+    await ui.NavigateToURL((`${process.env.data_drive_link}`))
+    await ui.type(testData.Credentials_QA[0].username, loginPage.usernameFileld)
+    await ui.type(testData.Credentials_QA[0].password, loginPage.passwordField)
+    await ui.clickElement(loginPage.loginButton)
 })
 
 export { expect } from '@playwright/test'

@@ -18,20 +18,20 @@ export class DashboardPage {
         this.passwordText = page.getByRole('heading', { name: 'Password for all users:' })
     }
 
-    async logout() {
-        await this.openMenuButton.click()
-        await this.logoutLink.click()
-    }
+    // async logout() {
+    //     await this.openMenuButton.click()
+    //     await this.logoutLink.click()
+    // }
 
-    async verifyLogoutPage() {
-        await expect(this.swagLabsLogo).toHaveText('Swag Labs')
-        await expect(this.usernameText).toHaveText('Accepted usernames are:')
-        await expect(this.passwordText).toHaveText('Password for all users:')
-    }
+    // async verifyLogoutPage() {
+    //     await expect(this.swagLabsLogo).toHaveText('Swag Labs')
+    //     await expect(this.usernameText).toHaveText('Accepted usernames are:')
+    //     await expect(this.passwordText).toHaveText('Password for all users:')
+    // }
 
-    async isLoaded(): Promise<boolean> {
-        return this.swagLabsLogo.isVisible()
-    }
+    // async isLoaded(): Promise<boolean> {
+    //     return this.swagLabsLogo.isVisible()
+    // }
 
 
 
