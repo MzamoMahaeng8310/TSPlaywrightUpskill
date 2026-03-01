@@ -5,7 +5,7 @@ export class UiHelper {
 
     // --------------------- LOGGING --------------------
     log(message: string) {
-        console.log(`[UIHelper] $[message]`);
+        console.log(`[UIHelper] ${message}`);
     }
 
     //----------------------- Basic UI Actions --------------------
@@ -125,7 +125,7 @@ export class UiHelper {
 
     async goToPreviousPage(prevButton: Locator) {
         if (await prevButton.isEnabled()) {
-            await prevButton.click
+            await prevButton.click()
         }
 
     }
@@ -172,5 +172,8 @@ export class UiHelper {
         await element.screenshot({ path: `test-results/screenshots/${filename}` })
     }
 
+    async openPortfolioByName(name :string){
+        await this.page.locator(`text=${name}`).click()
+    }
      
 }

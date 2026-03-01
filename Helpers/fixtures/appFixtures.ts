@@ -40,6 +40,7 @@ test.beforeEach(async ({ ui, loginPage }) => {
     await ui.type(testData.Credentials_QA[0].username, loginPage.usernameFileld)
     await ui.type(testData.Credentials_QA[0].password, loginPage.passwordField)
     await ui.clickElement(loginPage.loginButton)
+    await  ui.waitForNetworkIdle()
 })
 
 export { expect } from '@playwright/test'
