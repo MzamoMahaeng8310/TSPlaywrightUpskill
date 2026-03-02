@@ -13,14 +13,6 @@ export class LoginPage {
         this.passwordField = page.locator('#password')
         this.loginButton = page.locator('#login-button')
     }
-    // async goto() {
-    //     await this.page.goto(`${process.env.data_drive_link}`)
-    // }
-
-    // async login(username: string, password: string) {
-    //     await this.usernameFileld.fill(username)
-    //     await this.passwordField.fill(password)
-    //     await this.loginButton.click()
-    // }
+   
 }
 

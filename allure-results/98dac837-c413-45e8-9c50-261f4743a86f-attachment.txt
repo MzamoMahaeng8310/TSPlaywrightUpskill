@@ -1,0 +1,13 @@
+Authentication token: 0c5f4b8afb604d8
+This is the booking id 4126
+The booking body {
+  bookingid: 4126,
+  booking: {
+    firstname: 'Jacques',
+    lastname: 'Van Der Merwe',
+    totalprice: 190,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-19', checkout: '2026-01-25' },
+    additionalneeds: 'Loose Heads In The Scrum'
+  }
+}
