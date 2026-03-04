@@ -1,10 +1,10 @@
 name: Playwright Tests
+
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-
 
 permissions:
   contents: read
@@ -12,50 +12,42 @@ permissions:
   id-token: write
 
 concurrency:
-  group: 'pages'
+  group: pages
   cancel-in-progress: false
+
 jobs:
   test:
-    timeout-minutes: 60
     runs-on: ubuntu-latest
+    timeout-minutes: 60
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: lts/*
-    - name: Install dependencies
-      run: npm ci
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test
-  
-    - name: Generate Allure Report
-      run : npx allure generate allure-results --clean -o allure-report
+      - uses: actions/checkout@v4
 
-    - name : Upload Allure report artifact
-      uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: allure-report
-        path: allure-report/
-        retention-days: 30
-        
-    - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: playwright-report
-        path: playwright-report/
-        retention-days: 30
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v2
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - run: npx playwright test
+      - run: npx allure generate allure-results --clean -o allure-report
 
-    - name: Upload Pages artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-        path: allure-report/
-    - name : Deploy to Github pages
-      uses: actions/deploy-pages@v1
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: allure-report/
 
-      
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
