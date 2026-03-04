@@ -6,14 +6,6 @@ on:
   pull_request:
     branches: [ main, master ]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   test:
@@ -46,19 +38,3 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: allure-report/
-
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Configure Pages
-        uses: actions/configure-pages@v2
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
