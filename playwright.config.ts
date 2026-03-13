@@ -54,7 +54,7 @@ export default defineConfig({
       name: 'setup',
       testMatch: /auth\.setup\.ts/,
     },
-    {
+     {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],

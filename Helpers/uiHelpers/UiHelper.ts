@@ -160,6 +160,9 @@ export class UiHelper {
         return element.isVisible()
     }   
 
+     async waitForURLToLoad( url: string){
+        await this.page.waitForURL(url)
+     }
 
     //------------------SCROLLING----------------------
     async scrollIntoView(element: Locator) {

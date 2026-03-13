@@ -1,2 +1,0 @@
-this is the base url https://restful-booker.herokuapp.com
-Authentication token: 03ccbce2e99e4c2

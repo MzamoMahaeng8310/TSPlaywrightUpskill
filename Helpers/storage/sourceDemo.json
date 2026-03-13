@@ -1,0 +1,438 @@
+{
+  "cookies": [
+    {
+      "name": "_gcl_au",
+      "value": "1.1.208275238.1773393908",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1781169908,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__gtm_referrer",
+      "value": "https%3A%2F%2Fwww.saucedemo.com%2F",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_rdt_uuid",
+      "value": "1773393908072.bd847b8a-261e-4cbe-82fe-a70b2957f9a7",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1781169908,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "qk_jfR9rx3yHMj_rh0FK9fk1RSpYMyOsXuEdDRRojik-1773393906-1.0.1.1-MI8u_x2mAD4YPReg_yBaXh72FhV5_cdKia1fXigScX3YxrvyeLx08zoVEs0A05N6VCGom25xAP8CMDL2KzFhbbTOD03BIuYHOgjOyHx3aCE",
+      "domain": ".g2crowd.com",
+      "path": "/",
+      "expires": 1773395708.257873,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_mkto_trk",
+      "value": "id:468-XBT-687&token:_mch-saucelabs.com-9d90938859562394fc7f9417efb45982",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1807953908.276023,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "li_sugr",
+      "value": "959d8570-06fb-42d7-a5fd-7edc92e290a3",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1781169909.530903,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bcookie",
+      "value": "\"v=2&29d56b36-a90d-45cc-8c38-e07b944d1e2d\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1804929909.531032,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lidc",
+      "value": "\"b=TGST00:s=T:r=T:a=T:p=T:g=3846:u=1:x=1:i=1773393906:t=1773480306:v=2:sig=AQGrl6V5fpesmzNCy1SecLA1smkPPG5H\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1773480309.416106,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.370579787.1773393908",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1773480308,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetsid",
+      "value": "871a71601ebe11f18f582f098754fba1",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1773480308,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetvid",
+      "value": "871a92201ebe11f1956a5b6f425e8af6",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1807089908,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CLID",
+      "value": "66d01618c1d04fcd8f3ae32fd89ff28f.20260313.20270313",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1804929908.631205,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "1C3BCC38DD1C625510B0DB23DC826321",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1807089911.4381,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "UserMatchHistory",
+      "value": "AQK26IRim3RzeAAAAZzmg4x4SWrhbvp6uffsFiA6gkUm5cgw2Lvvgn83tMIsjEHg2nDQeuXgfGmfqQ",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1775985908.772272,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AnalyticsSyncHistory",
+      "value": "AQJkQZJBWHxgswAAAZzmg4x4GHEQilN-_5vf4vPDeSyNYmqQEkJcnpMGcsJtbBT1c6_m6gc2HixHHulyQ2xDWg",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1775985908.772294,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.294624265.1773393908",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1807953908.856869,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUn0zdPphxkTL69fHj2sKlt-D6wSDTNzqMIhvZavm8Uc-91KhwmFohNwDJp5",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1807953909.096353,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bscookie",
+      "value": "\"v=1&202603130925074dc02582-0e7c-4412-83fe-d748463b9559AQG8JSVyeEle9sOQ4vH3iAukrg5MsUBM\"",
+      "domain": ".www.linkedin.com",
+      "path": "/",
+      "expires": 1804929909.185717,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "AUuZoSpMzjHt7_oVoZq.Y_V5o3lDhlYtJT7Hvzkga9s-1773393907-1.0.1.1-B4oKQjj1AotPf66_71krG38tmYEshtBDMdlKD3DhK1WUZPVIpaxPpXfV7P4w8cfJ18CBy0oDASYN3xNdEmWns_FEeHdE8I6kFTXvFIWUPOU",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1773395709.185867,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1773393909294.964245102213143612",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1781169909,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "K1lZjbrZWe8MD.3WPGV5M8f1YFh4c4u89rB07rOq1Oc-1773393907-1.0.1.1-fAsJGiEX0MVVhrfdkL2lPmDp_BVvUupcU0kEtiuMyFFZ6WbbLpKVeHDgaaKB.sa2C6PP.pw8bDOHoUrqCuJQpkLGeQwzUJX16SBninSAGro",
+      "domain": ".g2.com",
+      "path": "/",
+      "expires": 1773395709.307428,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clck",
+      "value": "6mvqts%5E2%5Eg4b%5E0%5E2263",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1804929909,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cb_user_id",
+      "value": "null",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1804929909,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cb_group_id",
+      "value": "null",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1804929909,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cb_anonymous_id",
+      "value": "%228aeb445b-35b6-423d-83d9-0ff2a5c5581e%22",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1804929909,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clsk",
+      "value": "1xum6z4%5E1773393910161%5E1%5E1%5Ez.clarity.ms%2Fcollect",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1773480310,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1773998711.438307,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SRM_B",
+      "value": "1C3BCC38DD1C625510B0DB23DC826321",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1807089911.438356,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "g_state",
+      "value": "{\"i_l\":0,\"i_ll\":1773393910587,\"i_b\":\"is8pc6Z0ks+MBApd/+sI2E+TO4n29u8+uiIfbeUhryg\",\"i_e\":{\"enable_itp_optimization\":0}}",
+      "domain": "saucelabs.com",
+      "path": "/",
+      "expires": 1788945910,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "SM",
+      "value": "C",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "1C3BCC38DD1C625510B0DB23DC826321",
+      "domain": ".clarity.ms",
+      "path": "/",
+      "expires": 1807089910.613855,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1773998710.61396,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "TS0MUui59wh.hfKTa1vuxA6k91bVVZ5REt_MDDNXu.w-1773393909-1.0.1.1-0Ea4OdQ64MeZ6HVac9hFCgB.dPYvPEIM29UZwpXp7jrSI3G7DHWUlPHtrweRtMj6cdWaX.Vm6mhmxe.5ZJtF1HMrdgRcouZCSePAumDMhdw",
+      "domain": ".info.saucelabs.com",
+      "path": "/",
+      "expires": 1773395711.416066,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_8VH1KDRPL5",
+      "value": "GS2.1.s1773393908$o1$g0$t1773393914$j54$l0$h1959553097",
+      "domain": ".saucelabs.com",
+      "path": "/",
+      "expires": 1807953914.929104,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "session-username",
+      "value": "standard_user",
+      "domain": "www.saucedemo.com",
+      "path": "/",
+      "expires": 1773395632,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.saucedemo.com",
+      "localStorage": [
+        {
+          "name": "backtrace-guid",
+          "value": "90caee1f-2050-461c-8723-fc58ee813a28"
+        },
+        {
+          "name": "backtrace-last-active",
+          "value": "1773393713137"
+        }
+      ]
+    },
+    {
+      "origin": "https://saucelabs.com",
+      "localStorage": [
+        {
+          "name": "_uetvid_exp",
+          "value": "Wed, 07 Apr 2027 09:25:08 GMT"
+        },
+        {
+          "name": "_ccmsi",
+          "value": "1773393908220_g0jbi1r5v|1773393908220"
+        },
+        {
+          "name": "cb_group_properties",
+          "value": "{}"
+        },
+        {
+          "name": "tcmu",
+          "value": "1"
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"creationTimeMs\":1773393907795},\"expires\":1781169907795}}"
+        },
+        {
+          "name": "_uetsid",
+          "value": "871a71601ebe11f18f582f098754fba1"
+        },
+        {
+          "name": "lastExternalReferrerTime",
+          "value": "1773393909284"
+        },
+        {
+          "name": "tcmQuarantine",
+          "value": "{\"requests\":[],\"cookies\":[]}"
+        },
+        {
+          "name": "_uetsid_exp",
+          "value": "Sat, 14 Mar 2026 09:25:08 GMT"
+        },
+        {
+          "name": "_uetvid",
+          "value": "871a92201ebe11f1956a5b6f425e8af6"
+        },
+        {
+          "name": "g2tracking",
+          "value": "{\"20260213\":[\",Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/140.0.0.0Safari/537.36,1280x720,en-GB,-120,1349,,\"]}"
+        },
+        {
+          "name": "lastExternalReferrer",
+          "value": "other"
+        },
+        {
+          "name": "cb_user_traits",
+          "value": "{}"
+        },
+        {
+          "name": "li_adsId",
+          "value": "9e1fc7e5-57ce-4d0d-a468-36622ec8111a"
+        },
+        {
+          "name": "debug",
+          "value": "undefined"
+        },
+        {
+          "name": "algolia-client-js-5.49.1-RO95H65NEO",
+          "value": "{\"{\\\"url\\\":\\\"RO95H65NEO-dsn.algolia.net\\\",\\\"accept\\\":\\\"read\\\",\\\"protocol\\\":\\\"https\\\",\\\"status\\\":\\\"up\\\",\\\"lastUpdate\\\":1773393907345}\":{\"timestamp\":1773393908360,\"value\":{\"url\":\"RO95H65NEO-dsn.algolia.net\",\"accept\":\"read\",\"protocol\":\"https\",\"status\":\"timed out\",\"lastUpdate\":1773393908360}}}"
+        }
+      ]
+    }
+  ]
+}
