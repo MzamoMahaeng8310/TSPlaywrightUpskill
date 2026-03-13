@@ -34,13 +34,13 @@ export const test = base.extend<AppFixtures>({
         await use(ui)
     },
 });
-test.beforeAll(async ({ ui, loginPage }) => {
+test.beforeEach(async ({ ui, loginPage }) => {
     await ui.NavigateToURL((`${process.env.data_drive_link}`))
     await ui.type(testData.Credentials_QA[0].username, loginPage.usernameFileld)
     await ui.type(testData.Credentials_QA[0].password, loginPage.passwordField)
     await ui.clickElement(loginPage.loginButtonSouceDemo)
     await  ui.waitForNetworkIdle()
-    await ui.storageStageStore('../../storage/sourceDemo.json')
+    // await ui.storageStageStore('../../storage/sourceDemo.json')
 
 //
 //     // await ui.NavigateToURL(`${process.env.qa_mps_link}`)
