@@ -42,7 +42,7 @@ test.describe.serial('API CRUD Base Suite', () => {
 
       expect(response.status()).toBe(200)
       const body :GetBookingByIdResponse = await response.json()
-      console.log("The updated resposebody is", body)
+      console.log("The updated responsibly is", body)
       expect(body.firstname).toBe(testData.UpdateBookingData.firstname)
       expect(body.lastname).toBe(testData.UpdateBookingData.lastname)
       expect(body.bookingdates.checkin).toBe(testData.UpdateBookingData.bookingdates.checkin)
@@ -50,8 +50,8 @@ test.describe.serial('API CRUD Base Suite', () => {
    });
 
    test('Delete The Booking', async ({ api }) => {
-      const reponse = await api.deleteBooking(bookingID)
-      expect(reponse.status()).toBe(201)
+      const response = await api.deleteBooking(bookingID)
+      expect(response.status()).toBe(201)
    });
 
 })
