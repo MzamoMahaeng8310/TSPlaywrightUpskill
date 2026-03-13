@@ -14,7 +14,8 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './test',
+  testDir: './test/',
+  timeout: 30 * 1000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -39,7 +40,7 @@ export default defineConfig({
     screenshot: 'on',
     trace: 'on-first-retry',
     video: 'on',
-    headless: true,
+    headless: false,
     launchOptions: {
       args: [
         '--disable-features=PasswordManagerOnboarding,PasswordManagerInternalsUI,AutofillServerCommunication,AutofillEnableAccountWalletStorage'
@@ -50,9 +51,18 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'setup',
+      testMatch: /auth\.setup\.ts/,
     },
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+       storageState: 'storage/auth.json'
+      },
+     dependencies: ['setup'],
+    },
+
 
     // {
     //   name: 'firefox',

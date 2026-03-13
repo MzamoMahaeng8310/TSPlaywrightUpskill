@@ -1,7 +1,7 @@
 import {test, expect} from '../../Helpers/fixtures/appFixtures'
 
 
-test('dashboard loads after login', async ({ ui,dashboardPage,loginPage }) => {
+test('dashboard loads after login', async ({ ui,dashboardPage }) => {
 
     await ui.waitForNetworkIdle()
     await ui.clickElement(dashboardPage.openMenuButton)

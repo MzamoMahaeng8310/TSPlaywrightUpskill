@@ -11,6 +11,7 @@ export class ApiClient {
     }
 
     async authenticate(username: string, password: string) {
+        console.log('this is the base url',`${this.baseURL}`)
         const response = await this.request.post(`${this.baseURL}/auth`,
             {
                 data: { username, password }

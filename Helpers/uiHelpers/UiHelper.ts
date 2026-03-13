@@ -1,4 +1,5 @@
 import { Page, Locator, expect } from '@playwright/test';
+import path from  'path'
 
 export class UiHelper {
     constructor(private page: Page) { }
@@ -142,6 +143,10 @@ export class UiHelper {
         await element.waitFor({ state: "visible" })
     }
 
+    async pauseExecution(){
+        await this.page.pause()
+    }
+
     async waitForPagaeLoad() {
         await this.page.waitForLoadState("load")
 
@@ -154,6 +159,7 @@ export class UiHelper {
       async isLoaded(element : Locator): Promise<boolean> {
         return element.isVisible()
     }   
+
 
     //------------------SCROLLING----------------------
     async scrollIntoView(element: Locator) {
@@ -175,5 +181,11 @@ export class UiHelper {
     async openPortfolioByName(name :string){
         await this.page.locator(`text=${name}`).click()
     }
-     
+
+    async storageStageStore(filename : string){
+        await this.page.context().storageState({
+            path: path.resolve(__dirname,filename),
+        })
+
+    }
 }

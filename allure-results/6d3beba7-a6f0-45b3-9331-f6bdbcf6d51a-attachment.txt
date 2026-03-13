@@ -1,0 +1,9 @@
+Authentication token: 6e3128452e16d93
+The updated resposebody is {
+  firstname: 'Jake',
+  lastname: 'White',
+  totalprice: 875,
+  depositpaid: true,
+  bookingdates: { checkin: '2025-12-25', checkout: '2026-01-31' },
+  additionalneeds: 'He also coached the Blue Bulls'
+}

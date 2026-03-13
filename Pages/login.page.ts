@@ -6,12 +6,16 @@ export class LoginPage {
     readonly usernameFileld: Locator
     readonly passwordField: Locator
     readonly loginButton: Locator
+    readonly loginButtonSouceDemo: Locator
+    readonly selectTenantTitle: Locator
 
     constructor(page: Page) {
         this.page = page
-        this.usernameFileld = page.locator('#user-name')
-        this.passwordField = page.locator('#password')
-        this.loginButton = page.locator('#login-button')
+        this.usernameFileld = page.getByRole('textbox', { name: 'Username' })
+        this.passwordField = page.getByRole('textbox', { name: 'Password' })
+        this.loginButton = page.getByRole('button', { name: 'Sign in' })
+        this.loginButtonSouceDemo = page.locator('#login-button')
+        this.selectTenantTitle = page.getByRole('heading', { name: 'Please select a tenant' })
     }
    
 }

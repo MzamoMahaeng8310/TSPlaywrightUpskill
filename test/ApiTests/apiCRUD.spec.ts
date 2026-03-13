@@ -21,7 +21,7 @@ test.describe.serial('API CRUD Base Suite', () => {
 
       expect(body.booking.firstname).toBe(bookingRequest.firstname)
       expect(body.booking.lastname).toBe(bookingRequest.lastname)
-   })
+        })
 
 
    test('Get Booking by ID', async ({ api }) => {
