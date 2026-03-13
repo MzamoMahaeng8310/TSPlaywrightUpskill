@@ -1,0 +1,10 @@
+this is the base url https://restful-booker.herokuapp.com
+Authentication token: 6059c0ad3e6d54d
+THe Get By ID response body {
+  firstname: 'Jacques',
+  lastname: 'Van Der Merwe',
+  totalprice: 190,
+  depositpaid: true,
+  bookingdates: { checkin: '2025-12-19', checkout: '2026-01-25' },
+  additionalneeds: 'Loose Heads In The Scrum'
+}
