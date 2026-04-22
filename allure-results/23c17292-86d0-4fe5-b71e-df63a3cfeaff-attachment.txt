@@ -1,0 +1,1 @@
+locator('#courses_table tbody tr')

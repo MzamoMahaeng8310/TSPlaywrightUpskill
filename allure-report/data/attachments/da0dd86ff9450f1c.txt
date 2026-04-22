@@ -1,0 +1,14 @@
+this is the base url https://restful-booker.herokuapp.com
+Authentication token: fe110f0f4015343
+This is the booking id 1238
+The booking body {
+  bookingid: 1238,
+  booking: {
+    firstname: 'Jacques',
+    lastname: 'Van Der Merwe',
+    totalprice: 190,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-19', checkout: '2026-01-25' },
+    additionalneeds: 'Loose Heads In The Scrum'
+  }
+}

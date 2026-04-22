@@ -117,6 +117,14 @@ export class UiHelper {
         return row.locator("td").nth(cellIndex).innerText()
     }
 
+    async verifyCellValue(row : Locator , value :string) {
+       // await row.waitFor()
+        const cellValues = await row.locator('td').allInnerTexts()
+        console.log('The Cell Values are : ',cellValues)
+        await expect(row.locator('td')).toContainText([value])
+
+    }
+
     //----------------PAGINATION HELPERS----------------
     async goToNextPage(nextButton: Locator) {
         if (await nextButton.isEnabled()) {
@@ -170,7 +178,7 @@ export class UiHelper {
 
     }
 
-    //-----------------SCREENHOT----------------------
+    //-----------------SCREENSHOT----------------------
     async takeFullPageScreenshot(filename: string) {
 
         await this.page.screenshot({ path: `test-results/screenshots/${filename}`, fullPage: true })

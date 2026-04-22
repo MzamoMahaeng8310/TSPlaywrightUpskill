@@ -1,0 +1,56 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link "Dashboard" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img [ref=e5] [cursor=pointer]
+    - button "Open Users Dialog" [ref=e10] [cursor=pointer]:
+      - img [ref=e13] [cursor=pointer]
+  - generic [ref=e16]:
+    - navigation [ref=e17]:
+      - list [ref=e18]:
+        - button "MPS" [ref=e19] [cursor=pointer]:
+          - heading "MPS" [level=1] [ref=e20] [cursor=pointer]:
+            - img [ref=e22] [cursor=pointer]
+            - generic [ref=e24] [cursor=pointer]: MPS
+          - img [ref=e26] [cursor=pointer]
+        - listitem [ref=e28]:
+          - link "Dashboard" [ref=e29] [cursor=pointer]:
+            - /url: /
+            - img [ref=e30] [cursor=pointer]
+            - generic [ref=e32] [cursor=pointer]: Dashboard
+        - listitem [ref=e33]:
+          - link "Models" [ref=e34] [cursor=pointer]:
+            - /url: /models
+            - img [ref=e35] [cursor=pointer]
+            - generic [ref=e37] [cursor=pointer]: Models
+        - listitem [ref=e38]:
+          - link "Portfolios" [active] [ref=e39] [cursor=pointer]:
+            - /url: /portfolios
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e42] [cursor=pointer]: Portfolios
+        - listitem [ref=e43]:
+          - link "Activity" [ref=e44] [cursor=pointer]:
+            - /url: /activity
+            - img [ref=e45] [cursor=pointer]
+            - generic [ref=e47] [cursor=pointer]: Activity
+    - main [ref=e48]:
+      - heading "Portfolios" [level=3] [ref=e51]
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - button [disabled] [ref=e82]:
+            - img [ref=e83]
+          - button [disabled] [ref=e85]:
+            - img [ref=e86]
+        - generic [ref=e88]:
+          - separator [ref=e90]
+          - generic [ref=e92]: Go to page
+        - generic [ref=e95]:
+          - button [disabled] [ref=e96]:
+            - img [ref=e97]
+          - button [disabled] [ref=e99]:
+            - img [ref=e100]
+  - alert [ref=e102]
+```
