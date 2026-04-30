@@ -1,0 +1,13 @@
+Authentication token: abbdafa8c42185a
+This is the booking id 633
+The booking body {
+  bookingid: 633,
+  booking: {
+    firstname: 'Jacques',
+    lastname: 'Van Der Merwe',
+    totalprice: 190,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-19', checkout: '2026-01-25' },
+    additionalneeds: 'Loose Heads In The Scrum'
+  }
+}

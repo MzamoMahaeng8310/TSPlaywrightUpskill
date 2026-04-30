@@ -1,0 +1,10 @@
+this is the base url https://restful-booker.herokuapp.com
+Authentication token: 644a4b8a10f01d4
+The updated responsibly is {
+  firstname: 'Jake',
+  lastname: 'White',
+  totalprice: 875,
+  depositpaid: true,
+  bookingdates: { checkin: '2025-12-25', checkout: '2026-01-31' },
+  additionalneeds: 'He also coached the Blue Bulls'
+}

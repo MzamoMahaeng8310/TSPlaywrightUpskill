@@ -1,0 +1,13 @@
+Authentication token: 4528515a6b32b0e
+This is the booking id 3311
+The booking body {
+  bookingid: 3311,
+  booking: {
+    firstname: 'Jacques',
+    lastname: 'Van Der Merwe',
+    totalprice: 190,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-19', checkout: '2026-01-25' },
+    additionalneeds: 'Loose Heads In The Scrum'
+  }
+}
